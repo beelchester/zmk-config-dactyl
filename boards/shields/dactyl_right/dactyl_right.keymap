@@ -12,7 +12,7 @@
             &kp D    &kp H    &kp T    &kp N    &kp S    &kp MINUS  // R2
             &kp B    &kp M    &kp W    &kp V    &kp Z    &kp EQUAL  // R3
             &kp SQT  &kp COMMA &kp DOT  &kp K    &kp J    &none      // R4
-            &bl      &kp SPACE &kp BSPC &none    &none    &none      // R5
+            &bootloader &kp SPACE &kp BSPC &none    &none    &none      // R5
             >;
         };
 
