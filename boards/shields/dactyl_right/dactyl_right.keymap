@@ -1,14 +1,4 @@
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-
-#define DEFAULT 0
-#define LOWER 1
-#define UPPER 2
-
-// Define aliases for common behaviors
-#define LTAP(layer, key) < layer key // Tap for key, hold for layer
-#define MO(layer) &mo layer         // Momentary layer switch
 
 / {
     keymap {
@@ -17,34 +7,13 @@
         default_layer {
             bindings = <
             // C1       C2       C3       C4       C5       C6
-            &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y      // R1
-            &kp A    &kp S    &kp D    &kp F    &kp G    &kp H      // R2
-            &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N      // R3
-            &kp LSHFT &kp LALT &kp LGUI LTAP(LOWER,ESC) &kp BSPC  // R4
-            LTAP(UPPER,TAB) &kp LCTRL &kp SPACE // R5
+            &kp F    &kp G    &kp C    &kp R    &kp L    &kp SLASH  // R1
+            &kp D    &kp H    &kp T    &kp N    &kp S    &kp MINUS  // R2
+            &kp B    &kp M    &kp W    &kp V    &kp Z    &kp EQUAL  // R3
+            &kp SQT  &kp COMMA &kp DOT  &kp K    &kp J    &none      // R4
+            &kp TAB  &kp SPACE &kp BSPC &none    &none    &none      // R5
             >;
         };
 
-        lower_layer {
-            bindings = <
-            // C1       C2       C3       C4       C5       C6
-            &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6     // R1
-            &kp EXLM &kp AT   &kp HASH &kp DLLR &kp PRCNT &kp CARET  // R2
-            &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp BSLH &kp SQT   // R3
-            &trans   &trans   &trans   &trans   &trans      // R4
-            &trans   &trans   &trans      // R5
-            >;
-        };
-
-        upper_layer {
-            bindings = <
-            // C1       C2       C3       C4       C5       C6
-            &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6     // R1
-            &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12    // R2
-            &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_NXT // R3
-            &trans   &trans   &trans   &trans   &trans       // R4
-            &trans   &trans   &trans      // R5
-            >;
-        };
     };
 };
