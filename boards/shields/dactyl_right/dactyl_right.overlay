@@ -1,9 +1,16 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
+    physical_layout: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Dactyl Right";
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
+    };
+
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = <&physical_layout>;
     };
 
     default_transform: keymap_transform_0 {
