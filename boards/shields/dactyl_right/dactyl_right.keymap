@@ -7,7 +7,7 @@
 #define UPPER 2
 
 // Define aliases for common behaviors
-#define LT(layer, key) < layer key // Tap for key, hold for layer
+#define LTAP(layer, key) < layer key // Tap for key, hold for layer
 #define MO(layer) &mo layer         // Momentary layer switch
 
 / {
@@ -20,8 +20,8 @@
             &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y      // R1
             &kp A    &kp S    &kp D    &kp F    &kp G    &kp H      // R2
             &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N      // R3
-            &kp LSHFT &kp LALT &kp LGUI LT(LOWER,ESC) &kp BSPC  &none // R4
-            LT(UPPER,TAB) &kp LCTRL &kp SPACE &none    &none    &none // R5
+            &kp LSHFT &kp LALT &kp LGUI LTAP(LOWER,ESC) &kp BSPC  &none // R4
+            LTAP(UPPER,TAB) &kp LCTRL &kp SPACE &none    &none    &none // R5
             >;
         };
 
