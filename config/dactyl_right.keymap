@@ -11,17 +11,14 @@
         // Tap-Dance: Tap for ESC, Hold for Left Control
         td_esc_ctrl: tap_dance_esc_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_ESC_LCTRL";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&kp LCTRL>;
-            flavor = "tap-preferred";
         };
 
         // Macro: M1 = Left Control + L
         m1_macro: macro_ctrl_l {
             compatible = "zmk,behavior-macro";
-            label = "M1_CTRL_L";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
