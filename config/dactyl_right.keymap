@@ -72,7 +72,7 @@
             /* R1 */    &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &bootloader
             /* R2 */    &kp C_NEXT  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp C_PP
             /* R3 */    &trans      &trans      &m3_macro   &trans      &trans      &kp CAPS
-            /* R4 */    &trans      &trans      &trans      &kp C_VOL_DOWN &kp C_VOL_UP
+            /* R4 */    &trans      &trans      &trans      &kp C_VOL_DN  &kp C_VOL_UP
             /* R5 */    &trans      &trans      &trans
                         >;
         };
