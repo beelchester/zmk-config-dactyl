@@ -24,9 +24,9 @@
             label = "M1_CTRL_L";
             #binding-cells = <0>;
             bindings
-                = <¯o_press &kp LCTRL>
-                , <¯o_tap &kp L>
-                , <¯o_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp L>
+                , <&macro_release &kp LCTRL>
                 ;
         };
     };
@@ -40,9 +40,8 @@
             /* R1 */    &kp F       &kp G       &kp C       &kp R       &kp L       &kp SLASH
             /* R2 */    &kp D       &kp H       &kp T       &kp N       &kp S       &td_esc_ctrl
             /* R3 */    &kp B       &kp M       &kp W       &kp V       &kp Z       &kp RSHIFT
-            /* R4 */                                        &none       &none
-            /* R4 */    &kp RET     &kp LALT    &tog SYM
-            /* R5 */    &m1_macro   &kp BSPC    &mo FUN
+            /* R4 */    &kp RET     &kp BSPC    &tog SYM    &none       &none
+            /* R5 */    &m1_macro   &kp LALT    &mo FUN
                         >;
         };
 
@@ -60,7 +59,7 @@
         function_layer {
             //            C1          C2          C3          C4          C5          C6
             bindings = <
-            /* R1 */    &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
+            /* R1 */    &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &bootloader
             /* R2 */    &kp C_NEXT  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp C_PP
             /* R3 */    &trans      &trans      &kp M2      &trans      &trans      &kp CAPS
             /* R4 */    &trans      &trans      &trans      &trans      &trans
