@@ -60,12 +60,10 @@
             /* R3 */  &kp LSHIFT   &kp SEMI    &kp Q       &kp J       &kp K        &kp X
                       &kp B       &kp M       &kp W       &kp V        &kp Z       &kp RSHIFT
 
-            /* R4 */  &none       &none       &mo SYM     &kp SPACE    &kp LGUI  &none
-                      &mo SYM     &kp BSPC    &kp RET      &m2_macro  &m1_macro &none
-
-            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUN   &none &none &none
-                      &none       &mo FUN     &kp LALT &none &none &none
-            >;
+            /* R4 */  &none       &none       &mo SYM     &kp SPACE    &kp LGUI  
+                      &mo SYM     &kp BSPC    &kp RET      &m2_macro  &m1_macro
+            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUN   
+                      &none       &mo FUN     &kp LALT             >;
         };
 
         symbols_layer {
@@ -98,11 +96,11 @@
             /* R3 */  &out OUT_BLE&out OUT_USB &trans       &trans       &trans       &trans
                       &trans     &trans     &m3_macro  &trans     &trans     &kp CAPS
 
-            /* R4 */  &trans      &trans     &trans     &trans     &trans      &trans
-                      &trans      &trans     &trans     &kp C_VOL_DN&kp C_VOL_UP&trans
+            /* R4 */  &trans      &trans     &trans     &trans     &trans            
+                      &trans      &trans     &trans     &kp C_VOL_DN&kp C_VOL_UP      
 
-            /* R5 */  &trans       &trans      &trans     &trans     &trans      &trans
-                      &trans      &trans     &trans     &trans      &trans      &trans
+            /* R5 */  &trans       &trans      &trans                                  
+                      &trans      &trans     &trans                                   
             >;
         };
     };
