@@ -6,6 +6,10 @@
 #define SYM 1
 #define FUN 2
 
+&mt {
+    tapping-term-ms = <200>;
+};
+
 / {
     behaviors {
         m1_macro: macro_ctrl_l {
