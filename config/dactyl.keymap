@@ -60,10 +60,10 @@
             /* R3 */  &kp LCTRL   &kp SEMI    &kp Q       &kp J       &kp K        &kp X
                       &kp B       &kp M       &kp W       &kp V        &kp Z       &kp RSHIFT
 
-            /* R4 */  &none       &none       &mo SYMBOLS &kp SPACE    &kp LGUIa  &none
+            /* R4 */  &none       &none       &mo SYM     &kp SPACE    &kp LGUI  &none
                       &none       &mo SYM     &kp BSPC    &kp RET      &m2_macro  &m1_macro
 
-            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUNCTIONS  &none        &none       &none
+            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUN      &none        &none       &none
                       &none       &mo FUN     &kp LALT    &none        &none       &none
             >;
         };
