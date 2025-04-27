@@ -56,7 +56,7 @@
             /* R1 */  &kp LCTRL  &kp A      &kp O      &kp E      &kp U      &kp I      &kp D      &kp H      &kp T      &kp N      &kp S      &mt LCTRL ESC
             /* R2 */  &kp LSHIFT &kp SEMI   &kp Q      &kp J      &kp K      &kp X      &kp B      &kp M      &kp W      &kp V      &kp Z      &kp RSHIFT
             /* R3 */  &none      &m2_macro  &m1_macro  &mo SYM    &kp SPACE  &kp LGUI   &mo SYM    &kp BSPC   &kp RET    &m2_macro  &m1_macro  &none
-            /* R4 */  &none      &none      &none      &kp LSHIFT &kp LALT   &mo FUN    &ESC       &mo FUN    &kp LALT   &none      &none      &none
+            /* R4 */  &none      &none      &none      &kp LSHIFT &kp LALT   &mo FUN    &kp ESC    &mo FUN    &kp LALT   &none      &none      &none
         >;
     };
 
