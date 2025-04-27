@@ -51,20 +51,20 @@
 
         default_layer {
             bindings = <
-            /* R1 */  &none 	&kp SQT     &kp COMMA   &kp DOT     &kp P       &kp Y
+            /* R1 */  &kp TAB 	&kp SQT     &kp COMMA   &kp DOT     &kp P       &kp Y
                       &kp F       &kp G       &kp C       &kp R        &kp L       &kp SLASH
 
-            /* R2 */  &kp TAB     &kp A       &kp O       &kp E       &kp U        &kp I
+            /* R2 */  &kp LCTRL     &kp A       &kp O       &kp E       &kp U        &kp I
                       &kp D       &kp H       &kp T       &kp N        &kp S       &mt LCTRL ESC
 
-            /* R3 */  &kp LCTRL   &kp SEMI    &kp Q       &kp J       &kp K        &kp X
+            /* R3 */  &kp LSHIFT   &kp SEMI    &kp Q       &kp J       &kp K        &kp X
                       &kp B       &kp M       &kp W       &kp V        &kp Z       &kp RSHIFT
 
-            /* R4 */  &none       &none       &mo SYM     &kp SPACE    &kp LGUI  &none
-                      &none       &mo SYM     &kp BSPC    &kp RET      &m2_macro  &m1_macro
+            /* R4 */  &none       &none       &mo SYM     &kp SPACE    &kp LGUI  
+                      &mo SYM     &kp BSPC    &kp RET      &m2_macro  &m1_macro
 
-            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUN      &none        &none       &none
-                      &none       &mo FUN     &kp LALT    &none        &none       &none
+            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUN
+                      &none       &mo FUN     &kp LALT
             >;
         };
 
@@ -82,8 +82,8 @@
             /* R4 */  &trans    &trans    &trans   &trans     &trans     &trans
                       &trans      &trans     &trans      &trans      &trans      &trans
 
-            /* R5 */  &none       &none      &trans  &trans   &trans    &none
-                      &none       &trans     &trans      &none       &none       &none
+            /* R5 */  &trans       &trans      &trans  &trans   &trans    &trans
+                      &trans       &trans     &trans      &trans       &trans       &trans
             >;
         };
 
@@ -95,14 +95,14 @@
             /* R2 */  &bt BT_CLR  &bt BT_SEL 0&bt BT_SEL 1&bt BT_SEL 2&bt BT_SEL 3&bt BT_SEL 4
                       &kp C_NEXT  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp C_PP
 
-            /* R3 */  &out OUT_BLE&out OUT_USB &none       &none       &none       &none
+            /* R3 */  &out OUT_BLE&out OUT_USB &trans       &trans       &trans       &trans
                       &trans     &trans     &m3_macro  &trans     &trans     &kp CAPS
 
             /* R4 */  &trans      &trans     &trans     &trans     &trans      &trans
                       &trans      &trans     &trans     &kp C_VOL_DN&kp C_VOL_UP&trans
 
-            /* R5 */  &none       &none      &trans     &trans     &trans      &none
-                      &trans      &trans     &trans     &none      &none      &none
+            /* R5 */  &trans       &trans      &trans     &trans     &trans      &trans
+                      &trans      &trans     &trans     &trans      &trans      &trans
             >;
         };
     };
