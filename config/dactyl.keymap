@@ -51,38 +51,38 @@
 
         default_layer {
             bindings = <
-            /* R1 */  &kp SQT     &kp COMMA   &kp DOT     &kp P        &kp Y       &kp MINUS
+            /* R1 */  &none 	&kp SQT     &kp COMMA   &kp DOT     &kp P       &kp Y
                       &kp F       &kp G       &kp C       &kp R        &kp L       &kp SLASH
 
-            /* R2 */  &kp A       &kp O       &kp E       &kp U        &kp I       &kp LSHIFT
+            /* R2 */  &kp TAB     &kp A       &kp O       &kp E       &kp U        &kp I
                       &kp D       &kp H       &kp T       &kp N        &kp S       &mt LCTRL ESC
 
-            /* R3 */  &kp SEMI    &kp Q       &kp J       &kp K        &kp X       &kp GRAVE
+            /* R3 */  &kp LCTRL   &kp SEMI    &kp Q       &kp J       &kp K        &kp X
                       &kp B       &kp M       &kp W       &kp V        &kp Z       &kp RSHIFT
 
-            /* R4 */  &kp LGUI    &kp LALT    &kp LCTRL   &kp TAB      &kp ESC     &none
+            /* R4 */  &none &none &mo SYMBOLS &kp SPACE    &kp LGUI
                       &none       &mo SYM     &kp BSPC    &kp RET      &m2_macro  &m1_macro
 
-            /* R5 */  &none       &none       &kp SPACE   &kp BSPC     &mo FUN     &none
+            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUNCTIONS  &none        &none       &none
                       &none       &mo FUN     &kp LALT    &none        &none       &none
             >;
         };
 
         symbols_layer {
             bindings = <
-            /* R1 */  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &kp EQUAL
+            /* R1 */  &trans &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5) 
                       &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &trans
 
-            /* R2 */  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp LSHIFT
+            /* R2 */ &kp LSHIFT   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5
                       &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp LCTRL
 
-            /* R3 */  &kp LS(GRAVE)&kp LS(MINUS)&kp LS(EQUAL)&kp LS(LBKT)&kp LS(RBKT)&kp BSLH
+            /* R3 */  &none       &kp LS(GRAVE)&kp LS(MINUS)&kp LS(EQUAL)&kp LS(LBKT)&kp LS(RBKT)
                       &kp BSLH    &kp MINUS  &kp EQUAL   &kp LBKT    &kp RBKT    &trans
 
-            /* R4 */  &kp LGUI    &kp LALT    &kp LCTRL   &kp TAB     &kp ESC     &trans
+            /* R4 */  &trans    &trans    &trans   &trans     &trans     &trans
                       &trans      &trans     &trans      &trans      &trans      &trans
 
-            /* R5 */  &none       &none       &kp SPACE   &kp BSPC    &mo FUN     &none
+            /* R5 */  &none       &none      &trans  &trans   &trans    &none
                       &none       &trans     &trans      &none       &none       &none
             >;
         };
