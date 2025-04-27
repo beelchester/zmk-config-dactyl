@@ -60,11 +60,11 @@
             /* R3 */  &kp LSHIFT   &kp SEMI    &kp Q       &kp J       &kp K        &kp X
                       &kp B       &kp M       &kp W       &kp V        &kp Z       &kp RSHIFT
 
-            /* R4 */  &none       &none       &mo SYM     &kp SPACE    &kp LGUI  
-                      &mo SYM     &kp BSPC    &kp RET      &m2_macro  &m1_macro
+            /* R4 */  &none       &none       &mo SYM     &kp SPACE    &kp LGUI  &none
+                      &mo SYM     &kp BSPC    &kp RET      &m2_macro  &m1_macro &none
 
-            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUN
-                      &none       &mo FUN     &kp LALT
+            /* R5 */  &kp LSHIFT  &kp LALT   &mo FUN   &none &none &none
+                      &none       &mo FUN     &kp LALT &none &none &none
             >;
         };
 
