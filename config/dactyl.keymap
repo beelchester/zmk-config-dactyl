@@ -55,30 +55,30 @@
             /* R0 */  &kp TAB    &kp SQT    &kp COMMA  &kp DOT    &kp P      &kp Y      &kp F      &kp G      &kp C      &kp R      &kp L      &kp SLASH
             /* R1 */  &kp LCTRL  &kp A      &kp O      &kp E      &kp U      &kp I      &kp D      &kp H      &kp T      &kp N      &kp S      &mt LCTRL ESC
             /* R2 */  &kp LSHIFT &kp SEMI   &kp Q      &kp J      &kp K      &kp X      &kp B      &kp M      &kp W      &kp V      &kp Z      &kp RSHIFT
-            /* R3 */  &none      &m2_macro  &m1_macro  &mo SYM    &kp SPACE  &kp LGUI   &mo SYM    &kp BSPC   &kp RET    &m2_macro  &m1_macro  &none
-            /* R4 */  &none      &none      &none      &kp LSHIFT &kp LALT   &mo FUN    &kp ESC    &mo FUN    &kp LALT   &none      &none      &none
+            /* R3 */  &none      &m2_macro  &m1_macro  &mo SYM    &kp SPACE  &kp LGUI   &kp LGUI   &kp BSPC   &kp RET    &m2_macro  &m1_macro  &none
+            /* R4 */  &none      &none      &none      &kp LSHIFT &kp LALT   &mo FUN    &kp LALT   &mo FUN    &mo SYM    &none      &none      &none
         >;
     };
 
        symbols_layer {
         bindings = <
             /*           c0      c1            c2            c3            c4            c5            c6         c7         c8         c9         c10        c11 */
-            /* R0 */    &trans  &kp LS(N1)   &kp LS(N2)   &kp LS(N3)   &kp LS(N4)   &kp LS(N5)   &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &trans
-            /* R1 */    &kp LSHIFT &kp N1     &kp N2       &kp N3       &kp N4       &kp N5       &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp LCTRL
-            /* R2 */    &none   &kp LS(MINUS) &kp LS(EQUAL)&kp LS(LBKT) &kp LS(RBKT) &kp LS(GRAVE) &kp BSLH   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &trans
-            /* R3 */    &none   &trans        &trans        &none        &none        &none        &none      &none      &none      &trans     &trans     &none
-            /* R4 */    &none   &none         &none         &trans       &trans       &trans       &trans     &trans     &trans     &none      &none      &none
+            /* R0 */    &trans     &kp LS(N1)    &kp LS(N2)     &kp LS(N3)    &kp LS(N4)   &kp LS(N5)    &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &trans
+            /* R1 */    &kp LSHIFT &kp N1        &kp N2         &kp N3        &kp N4       &kp N5        &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp LCTRL
+            /* R2 */    &trans     &kp LS(MINUS) &kp LS(EQUAL)  &kp LS(LBKT)  &kp LS(RBKT) &kp LS(GRAVE) &kp BSLH   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &trans
+            /* R3 */    &trans     &trans        &trans         &trans        &trans       &trans        &trans     &trans     &trans     &trans     &trans     &trans
+            /* R4 */    &trans     &trans        &trans         &trans        &trans       &trans        &trans     &trans     &trans     &trans     &trans     &trans
         >;
     };
 
     function_layer {
         bindings = <
             /*           c0           c1           c2           c3           c4           c5              c6           c7           c8           c9           c10         c11 */
-            /* R0 */    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &kp F6          &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &bootloader
-            /* R1 */    &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp C_PREV    &kp C_NEXT     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &kp C_PP
-            /* R2 */    &out OUT_BLE &out OUT_USB &trans       &trans       &trans       &trans          &trans       &trans       &m3_macro    &trans       &kp C_MUTE   &kp CAPS
-            /* R3 */    &none        &kp C_BRI_DN    &kp C_BRI_UP &none     &none        &none           &none        &none        &none        &kp C_VOL_DN &kp C_VOL_UP &none    
-            /* R4 */    &none        &none        &none        &trans       &trans       &trans          &trans       &trans       &trans       &none        &none        &none
+            /* R0 */    &kp F1       &kp F2          &kp F3             &kp F4        &kp F5       &kp F6        &kp F7       &kp F8      &kp F9       &kp F10      &kp F11      &bootloader
+            /* R1 */    &kp C_PP     &trans          &trans             &trans        &trans       &kp C_PREV    &kp C_NEXT   &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT    &kp C_PP
+            /* R2 */    &bt BT_CLR   &kp K_SCROLL_UP &kp K_SCROLL_DOWN  &trans        &trans       &trans        &trans       &trans      &m3_macro    &trans       &kp C_MUTE   &kp CAPS
+            /* R3 */    &trans       &kp C_BRI_DN    &kp C_BRI_UP       &trans        &trans       &trans        &trans       &trans      &trans       &kp C_VOL_DN &kp C_VOL_UP &trans
+            /* R4 */    &trans       &trans          &trans             &out OUT_TOG  &trans       &trans        &trans       &trans      &trans       &trans       &trans       &trans
         >;
     };    };
 };
