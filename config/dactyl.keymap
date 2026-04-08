@@ -46,21 +46,6 @@
                 ;
         };
 
-        m4_macro: macro_switch_dvorak {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &to DEF>
-                ;
-        };
-
-        m5_macro: macro_switch_colemak_dhm {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &to CMK>
-                ;
-        };
     };
 
         keymap {
@@ -105,7 +90,7 @@
             /* R0 */    &kp F1       &kp F2       &kp F3             &kp F4               &kp F5       &kp F6        &kp F7       &kp F8      &kp F9       &kp F10      &kp F11      &bootloader
             /* R1 */    &trans       &trans       &trans             &trans               &trans       &kp C_PREV    &kp C_NEXT   &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT    &kp C_PP
             /* R2 */    &bt BT_CLR   &trans       &kp C_AC_SCROLL_UP &kp C_AC_SCROLL_DOWN &trans       &trans        &trans       &trans      &m3_macro    &trans       &kp C_MUTE   &kp CAPS
-            /* R3 */    &trans       &kp C_BRI_DN &kp C_BRI_UP       &trans               &trans       &trans        &trans       &trans      &trans       &m4_macro    &m5_macro &trans
+            /* R3 */    &trans       &kp C_BRI_DN &kp C_BRI_UP       &trans               &trans       &trans        &trans       &trans      &trans       &to DEF      &to CMK   &trans
             /* R4 */    &trans       &trans       &trans             &out OUT_TOG         &trans       &trans        &trans       &trans      &trans       &trans    &trans    &trans
         >;
     };    };
