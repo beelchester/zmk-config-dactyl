@@ -4,8 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0
-#define SYM 1
-#define FUN 2
+#define CMK 1
+#define SYM 2
+#define FUN 3
 
 &mt {
     tapping-term-ms = <150>;
@@ -44,6 +45,22 @@
                 , <&macro_release &kp LSHIFT>
                 ;
         };
+
+        m4_macro: macro_switch_dvorak {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &to DEF>
+                ;
+        };
+
+        m5_macro: macro_switch_colemak_dhm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &to CMK>
+                ;
+        };
     };
 
         keymap {
@@ -57,6 +74,17 @@
             /* R2 */  &kp LSHIFT &kp SEMI     &kp Q         &kp J      &kp K      &kp X      &kp B      &kp M      &kp W      &kp V      &kp Z      &kp RSHIFT
             /* R3 */  &none      &kp C_VOL_DN &kp C_VOL_UP  &mo SYM    &kp SPACE  &kp LGUI   &kp LGUI   &kp BSPC   &kp RET    &m2_macro  &m1_macro  &none
             /* R4 */  &none      &none        &none         &kp C_PP   &kp LALT   &mo FUN    &kp LALT   &mo FUN    &mo SYM    &none      &none      &none
+        >;
+    };
+
+       colemak_dhm_layer {
+        bindings = <
+            /*           c0      c1      c2      c3      c4      c5      c6      c7      c8         c9      c10        c11 */
+            /* R0 */  &trans    &kp Q   &kp W   &kp F   &kp P   &kp B   &kp J   &kp L   &kp U      &kp Y   &kp SEMI   &trans
+            /* R1 */  &trans    &kp A   &kp R   &kp S   &kp T   &kp G   &kp M   &kp N   &kp E      &kp I   &kp O      &trans
+            /* R2 */  &trans    &kp Z   &kp X   &kp C   &kp D   &kp V   &kp K   &kp H   &kp COMMA  &kp DOT &kp SLASH  &trans
+            /* R3 */  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans
+            /* R4 */  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans
         >;
     };
 
@@ -77,8 +105,8 @@
             /* R0 */    &kp F1       &kp F2       &kp F3             &kp F4               &kp F5       &kp F6        &kp F7       &kp F8      &kp F9       &kp F10      &kp F11      &bootloader
             /* R1 */    &trans       &trans       &trans             &trans               &trans       &kp C_PREV    &kp C_NEXT   &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT    &kp C_PP
             /* R2 */    &bt BT_CLR   &trans       &kp C_AC_SCROLL_UP &kp C_AC_SCROLL_DOWN &trans       &trans        &trans       &trans      &m3_macro    &trans       &kp C_MUTE   &kp CAPS
-            /* R3 */    &trans       &kp C_BRI_DN &kp C_BRI_UP       &trans               &trans       &trans        &trans       &trans      &trans       &kp C_VOL_DN &kp C_VOL_UP &trans
-            /* R4 */    &trans       &trans       &trans             &out OUT_TOG         &trans       &trans        &trans       &trans      &trans       &trans       &trans       &trans
+            /* R3 */    &trans       &kp C_BRI_DN &kp C_BRI_UP       &trans               &trans       &trans        &trans       &trans      &trans       &m4_macro    &m5_macro &trans
+            /* R4 */    &trans       &trans       &trans             &out OUT_TOG         &trans       &trans        &trans       &trans      &trans       &trans    &trans    &trans
         >;
     };    };
 };
