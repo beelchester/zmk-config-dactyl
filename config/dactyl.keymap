@@ -6,7 +6,10 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
+        chosen {
+            zmk,physical-layout = &studio_layout;
+        };
+        studio_layout: studio_layout {
         compatible = "zmk,physical-layout";
         display-name = "LAYOUT";
 
